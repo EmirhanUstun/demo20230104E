@@ -17,5 +17,17 @@ public class MetinIslemleri2Test {
 		// THEN - Kontroller
 		assertEquals("Uctashoshosaf...", sonuc);
 	}
+	
+	@Test
+	public void testBosluklariTemizle2() {
+		// GIVE - On Hazirliklar
+		String orjinalMetin = "Mer ha   ba . .. ";
+		
+		// WHEN - Asil Testi Gerceklestir
+		String sonuc = MetinIslemleri2.bosluklariTemizle(orjinalMetin);
+		
+		// THEN - Kontroller
+		assertEquals("Merhaba...", sonuc);
 
+}
 }
